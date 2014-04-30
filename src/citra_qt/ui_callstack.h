@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'callstack.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.5
+** Created by: Qt User Interface Compiler version 5.2.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,14 +10,14 @@
 #define UI_CALLSTACK_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QDockWidget>
-#include <QtGui/QHeaderView>
-#include <QtGui/QTreeView>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QTreeView>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -31,14 +31,14 @@ public:
     void setupUi(QDockWidget *CallStack)
     {
         if (CallStack->objectName().isEmpty())
-            CallStack->setObjectName(QString::fromUtf8("CallStack"));
+            CallStack->setObjectName(QStringLiteral("CallStack"));
         CallStack->resize(400, 300);
         dockWidgetContents = new QWidget();
-        dockWidgetContents->setObjectName(QString::fromUtf8("dockWidgetContents"));
+        dockWidgetContents->setObjectName(QStringLiteral("dockWidgetContents"));
         verticalLayout = new QVBoxLayout(dockWidgetContents);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         treeView = new QTreeView(dockWidgetContents);
-        treeView->setObjectName(QString::fromUtf8("treeView"));
+        treeView->setObjectName(QStringLiteral("treeView"));
         treeView->setAlternatingRowColors(true);
         treeView->setRootIsDecorated(false);
         treeView->setItemsExpandable(false);
@@ -54,7 +54,7 @@ public:
 
     void retranslateUi(QDockWidget *CallStack)
     {
-        CallStack->setWindowTitle(QApplication::translate("CallStack", "Call stack", 0, QApplication::UnicodeUTF8));
+        CallStack->setWindowTitle(QApplication::translate("CallStack", "Call stack", 0));
     } // retranslateUi
 
 };

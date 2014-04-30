@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'controller_config.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.5
+** Created by: Qt User Interface Compiler version 5.2.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,18 +10,18 @@
 #define UI_CONTROLLER_CONFIG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QComboBox>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QTabWidget>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -61,7 +61,7 @@ public:
     void setupUi(QWidget *ControllerConfig)
     {
         if (ControllerConfig->objectName().isEmpty())
-            ControllerConfig->setObjectName(QString::fromUtf8("ControllerConfig"));
+            ControllerConfig->setObjectName(QStringLiteral("ControllerConfig"));
         ControllerConfig->resize(503, 293);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
@@ -69,12 +69,12 @@ public:
         sizePolicy.setHeightForWidth(ControllerConfig->sizePolicy().hasHeightForWidth());
         ControllerConfig->setSizePolicy(sizePolicy);
         verticalLayout = new QVBoxLayout(ControllerConfig);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setSizeConstraint(QLayout::SetFixedSize);
         gridLayout = new QGridLayout();
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
         activeControllerCB = new QComboBox(ControllerConfig);
-        activeControllerCB->setObjectName(QString::fromUtf8("activeControllerCB"));
+        activeControllerCB->setObjectName(QStringLiteral("activeControllerCB"));
 
         gridLayout->addWidget(activeControllerCB, 1, 1, 1, 1);
 
@@ -83,22 +83,22 @@ public:
         gridLayout->addItem(horizontalSpacer, 0, 2, 1, 1);
 
         checkBox = new QCheckBox(ControllerConfig);
-        checkBox->setObjectName(QString::fromUtf8("checkBox"));
+        checkBox->setObjectName(QStringLiteral("checkBox"));
 
         gridLayout->addWidget(checkBox, 1, 2, 1, 1);
 
         inputSourceCB = new QComboBox(ControllerConfig);
-        inputSourceCB->setObjectName(QString::fromUtf8("inputSourceCB"));
+        inputSourceCB->setObjectName(QStringLiteral("inputSourceCB"));
 
         gridLayout->addWidget(inputSourceCB, 0, 1, 1, 1);
 
         label_2 = new QLabel(ControllerConfig);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setObjectName(QStringLiteral("label_2"));
 
         gridLayout->addWidget(label_2, 1, 0, 1, 1);
 
         label = new QLabel(ControllerConfig);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName(QStringLiteral("label"));
 
         gridLayout->addWidget(label, 0, 0, 1, 1);
 
@@ -106,11 +106,11 @@ public:
         verticalLayout->addLayout(gridLayout);
 
         tabWidget = new QTabWidget(ControllerConfig);
-        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setObjectName(QStringLiteral("tabWidget"));
         mainStickTab = new QWidget();
-        mainStickTab->setObjectName(QString::fromUtf8("mainStickTab"));
+        mainStickTab->setObjectName(QStringLiteral("mainStickTab"));
         gridLayout_3 = new QGridLayout(mainStickTab);
-        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
         verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_3->addItem(verticalSpacer_2, 2, 2, 1, 1);
@@ -129,9 +129,9 @@ public:
 
         tabWidget->addTab(mainStickTab, QString());
         cStickTab = new QWidget();
-        cStickTab->setObjectName(QString::fromUtf8("cStickTab"));
+        cStickTab->setObjectName(QStringLiteral("cStickTab"));
         gridLayout_4 = new QGridLayout(cStickTab);
-        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
         horizontalSpacer_6 = new QSpacerItem(40, 0, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_4->addItem(horizontalSpacer_6, 1, 0, 1, 1);
@@ -150,9 +150,9 @@ public:
 
         tabWidget->addTab(cStickTab, QString());
         dPadTab = new QWidget();
-        dPadTab->setObjectName(QString::fromUtf8("dPadTab"));
+        dPadTab->setObjectName(QStringLiteral("dPadTab"));
         gridLayout_5 = new QGridLayout(dPadTab);
-        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
         horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_5->addItem(horizontalSpacer_7, 1, 2, 1, 1);
@@ -171,9 +171,9 @@ public:
 
         tabWidget->addTab(dPadTab, QString());
         buttonsTab = new QWidget();
-        buttonsTab->setObjectName(QString::fromUtf8("buttonsTab"));
+        buttonsTab->setObjectName(QStringLiteral("buttonsTab"));
         verticalLayout_2 = new QVBoxLayout(buttonsTab);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         tabWidget->addTab(buttonsTab, QString());
 
         verticalLayout->addWidget(tabWidget);
@@ -189,26 +189,26 @@ public:
 
     void retranslateUi(QWidget *ControllerConfig)
     {
-        ControllerConfig->setWindowTitle(QApplication::translate("ControllerConfig", "Controller Configuration", 0, QApplication::UnicodeUTF8));
+        ControllerConfig->setWindowTitle(QApplication::translate("ControllerConfig", "Controller Configuration", 0));
         activeControllerCB->clear();
         activeControllerCB->insertItems(0, QStringList()
-         << QApplication::translate("ControllerConfig", "Controller 1", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("ControllerConfig", "Controller 2", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("ControllerConfig", "Controller 3", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("ControllerConfig", "Controller 4", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("ControllerConfig", "Controller 1", 0)
+         << QApplication::translate("ControllerConfig", "Controller 2", 0)
+         << QApplication::translate("ControllerConfig", "Controller 3", 0)
+         << QApplication::translate("ControllerConfig", "Controller 4", 0)
         );
-        checkBox->setText(QApplication::translate("ControllerConfig", "Enabled", 0, QApplication::UnicodeUTF8));
+        checkBox->setText(QApplication::translate("ControllerConfig", "Enabled", 0));
         inputSourceCB->clear();
         inputSourceCB->insertItems(0, QStringList()
-         << QApplication::translate("ControllerConfig", "Keyboard", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("ControllerConfig", "Joypad", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("ControllerConfig", "Keyboard", 0)
+         << QApplication::translate("ControllerConfig", "Joypad", 0)
         );
-        label_2->setText(QApplication::translate("ControllerConfig", "Active Controller:", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("ControllerConfig", "Input Source:", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(mainStickTab), QApplication::translate("ControllerConfig", "Main Stick", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(cStickTab), QApplication::translate("ControllerConfig", "C-Stick", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(dPadTab), QApplication::translate("ControllerConfig", "D-Pad", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(buttonsTab), QApplication::translate("ControllerConfig", "Buttons", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("ControllerConfig", "Active Controller:", 0));
+        label->setText(QApplication::translate("ControllerConfig", "Input Source:", 0));
+        tabWidget->setTabText(tabWidget->indexOf(mainStickTab), QApplication::translate("ControllerConfig", "Main Stick", 0));
+        tabWidget->setTabText(tabWidget->indexOf(cStickTab), QApplication::translate("ControllerConfig", "C-Stick", 0));
+        tabWidget->setTabText(tabWidget->indexOf(dPadTab), QApplication::translate("ControllerConfig", "D-Pad", 0));
+        tabWidget->setTabText(tabWidget->indexOf(buttonsTab), QApplication::translate("ControllerConfig", "Buttons", 0));
     } // retranslateUi
 
 };

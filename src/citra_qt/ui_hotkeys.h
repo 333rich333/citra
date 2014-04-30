@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'hotkeys.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.5
+** Created by: Qt User Interface Compiler version 5.2.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,14 +10,14 @@
 #define UI_HOTKEYS_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QDialog>
-#include <QtGui/QDialogButtonBox>
-#include <QtGui/QHeaderView>
-#include <QtGui/QTreeWidget>
-#include <QtGui/QVBoxLayout>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QTreeWidget>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
@@ -31,19 +31,19 @@ public:
     void setupUi(QDialog *hotkeys)
     {
         if (hotkeys->objectName().isEmpty())
-            hotkeys->setObjectName(QString::fromUtf8("hotkeys"));
+            hotkeys->setObjectName(QStringLiteral("hotkeys"));
         hotkeys->resize(363, 388);
         verticalLayout = new QVBoxLayout(hotkeys);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         treeWidget = new QTreeWidget(hotkeys);
-        treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
+        treeWidget->setObjectName(QStringLiteral("treeWidget"));
         treeWidget->setSelectionBehavior(QAbstractItemView::SelectItems);
         treeWidget->setHeaderHidden(false);
 
         verticalLayout->addWidget(treeWidget);
 
         buttonBox = new QDialogButtonBox(hotkeys);
-        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+        buttonBox->setObjectName(QStringLiteral("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok|QDialogButtonBox::Reset);
 
@@ -59,11 +59,11 @@ public:
 
     void retranslateUi(QDialog *hotkeys)
     {
-        hotkeys->setWindowTitle(QApplication::translate("hotkeys", "Hotkey Settings", 0, QApplication::UnicodeUTF8));
+        hotkeys->setWindowTitle(QApplication::translate("hotkeys", "Hotkey Settings", 0));
         QTreeWidgetItem *___qtreewidgetitem = treeWidget->headerItem();
-        ___qtreewidgetitem->setText(2, QApplication::translate("hotkeys", "Context", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem->setText(1, QApplication::translate("hotkeys", "Hotkey", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem->setText(0, QApplication::translate("hotkeys", "Action", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem->setText(2, QApplication::translate("hotkeys", "Context", 0));
+        ___qtreewidgetitem->setText(1, QApplication::translate("hotkeys", "Hotkey", 0));
+        ___qtreewidgetitem->setText(0, QApplication::translate("hotkeys", "Action", 0));
     } // retranslateUi
 
 };

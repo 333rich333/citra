@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'disassembler.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.5
+** Created by: Qt User Interface Compiler version 5.2.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,16 +10,16 @@
 #define UI_DISASSEMBLER_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QDockWidget>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QPushButton>
-#include <QtGui/QTreeView>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QTreeView>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -39,36 +39,36 @@ public:
     void setupUi(QDockWidget *DockWidget)
     {
         if (DockWidget->objectName().isEmpty())
-            DockWidget->setObjectName(QString::fromUtf8("DockWidget"));
+            DockWidget->setObjectName(QStringLiteral("DockWidget"));
         DockWidget->resize(430, 401);
         dockWidgetContents = new QWidget();
-        dockWidgetContents->setObjectName(QString::fromUtf8("dockWidgetContents"));
+        dockWidgetContents->setObjectName(QStringLiteral("dockWidgetContents"));
         verticalLayout = new QVBoxLayout(dockWidgetContents);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         button_step = new QPushButton(dockWidgetContents);
-        button_step->setObjectName(QString::fromUtf8("button_step"));
+        button_step->setObjectName(QStringLiteral("button_step"));
 
         horizontalLayout->addWidget(button_step);
 
         button_pause = new QPushButton(dockWidgetContents);
-        button_pause->setObjectName(QString::fromUtf8("button_pause"));
+        button_pause->setObjectName(QStringLiteral("button_pause"));
 
         horizontalLayout->addWidget(button_pause);
 
         button_continue = new QPushButton(dockWidgetContents);
-        button_continue->setObjectName(QString::fromUtf8("button_continue"));
+        button_continue->setObjectName(QStringLiteral("button_continue"));
 
         horizontalLayout->addWidget(button_continue);
 
         pushButton = new QPushButton(dockWidgetContents);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setObjectName(QStringLiteral("pushButton"));
 
         horizontalLayout->addWidget(pushButton);
 
         button_breakpoint = new QPushButton(dockWidgetContents);
-        button_breakpoint->setObjectName(QString::fromUtf8("button_breakpoint"));
+        button_breakpoint->setObjectName(QStringLiteral("button_breakpoint"));
 
         horizontalLayout->addWidget(button_breakpoint);
 
@@ -76,7 +76,7 @@ public:
         verticalLayout->addLayout(horizontalLayout);
 
         treeView = new QTreeView(dockWidgetContents);
-        treeView->setObjectName(QString::fromUtf8("treeView"));
+        treeView->setObjectName(QStringLiteral("treeView"));
         treeView->setAlternatingRowColors(true);
         treeView->setIndentation(20);
         treeView->setRootIsDecorated(false);
@@ -93,12 +93,12 @@ public:
 
     void retranslateUi(QDockWidget *DockWidget)
     {
-        DockWidget->setWindowTitle(QApplication::translate("DockWidget", "Disassembly", 0, QApplication::UnicodeUTF8));
-        button_step->setText(QApplication::translate("DockWidget", "Step", 0, QApplication::UnicodeUTF8));
-        button_pause->setText(QApplication::translate("DockWidget", "Pause", 0, QApplication::UnicodeUTF8));
-        button_continue->setText(QApplication::translate("DockWidget", "Continue", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("DockWidget", "Step Into", 0, QApplication::UnicodeUTF8));
-        button_breakpoint->setText(QApplication::translate("DockWidget", "Set Breakpoint", 0, QApplication::UnicodeUTF8));
+        DockWidget->setWindowTitle(QApplication::translate("DockWidget", "Disassembly", 0));
+        button_step->setText(QApplication::translate("DockWidget", "Step", 0));
+        button_pause->setText(QApplication::translate("DockWidget", "Pause", 0));
+        button_continue->setText(QApplication::translate("DockWidget", "Continue", 0));
+        pushButton->setText(QApplication::translate("DockWidget", "Step Into", 0));
+        button_breakpoint->setText(QApplication::translate("DockWidget", "Set Breakpoint", 0));
     } // retranslateUi
 
 };

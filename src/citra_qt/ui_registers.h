@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'registers.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.5
+** Created by: Qt User Interface Compiler version 5.2.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,14 +10,14 @@
 #define UI_REGISTERS_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QDockWidget>
-#include <QtGui/QHeaderView>
-#include <QtGui/QTreeWidget>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QTreeWidget>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -31,14 +31,14 @@ public:
     void setupUi(QDockWidget *ARMRegisters)
     {
         if (ARMRegisters->objectName().isEmpty())
-            ARMRegisters->setObjectName(QString::fromUtf8("ARMRegisters"));
+            ARMRegisters->setObjectName(QStringLiteral("ARMRegisters"));
         ARMRegisters->resize(400, 300);
         dockWidgetContents = new QWidget();
-        dockWidgetContents->setObjectName(QString::fromUtf8("dockWidgetContents"));
+        dockWidgetContents->setObjectName(QStringLiteral("dockWidgetContents"));
         verticalLayout = new QVBoxLayout(dockWidgetContents);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         treeWidget = new QTreeWidget(dockWidgetContents);
-        treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
+        treeWidget->setObjectName(QStringLiteral("treeWidget"));
         treeWidget->setAlternatingRowColors(true);
 
         verticalLayout->addWidget(treeWidget);
@@ -52,10 +52,10 @@ public:
 
     void retranslateUi(QDockWidget *ARMRegisters)
     {
-        ARMRegisters->setWindowTitle(QApplication::translate("ARMRegisters", "ARM registers", 0, QApplication::UnicodeUTF8));
+        ARMRegisters->setWindowTitle(QApplication::translate("ARMRegisters", "ARM registers", 0));
         QTreeWidgetItem *___qtreewidgetitem = treeWidget->headerItem();
-        ___qtreewidgetitem->setText(1, QApplication::translate("ARMRegisters", "Value", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem->setText(0, QApplication::translate("ARMRegisters", "Register", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem->setText(1, QApplication::translate("ARMRegisters", "Value", 0));
+        ___qtreewidgetitem->setText(0, QApplication::translate("ARMRegisters", "Register", 0));
     } // retranslateUi
 
 };

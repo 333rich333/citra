@@ -6,6 +6,7 @@
 #define QHEXEDIT_H
 
 #include <QtGui>
+#include <QHBoxLayout>
 #include "qhexedit_p.h"
 
 /** \mainpage

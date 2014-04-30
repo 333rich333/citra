@@ -5,12 +5,14 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5OpenGL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(QtBinaryDir)QtCore4.dll" "$(EmuBinDir)" /Y /S /D
-xcopy "$(QtBinaryDir)QtGui4.dll" "$(EmuBinDir)" /Y /S /D
-xcopy "$(QtBinaryDir)QtOpenGL4.dll" "$(EmuBinDir)" /Y /S /D</Command>
+      <Command>xcopy "$(QtBinaryDir)Qt5Core.dll" "$(EmuBinDir)" /Y /S /D
+xcopy "$(QtBinaryDir)Qt5Gui.dll" "$(EmuBinDir)" /Y /S /D
+xcopy "$(QtBinaryDir)Qt5Widgets.dll" "$(EmuBinDir)" /Y /S /D
+xcopy "$(QtBinaryDir)Qt5OpenGL.dll" "$(EmuBinDir)" /Y /S /D
+%(Command)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup />

@@ -24,6 +24,11 @@
     </MOC>
     <Link />
     <ClCompile />
+    <PostBuildEvent>
+      <Command>xcopy "$(QtBinaryDir)icudt51.dll" "$(EmuBinDir)" /Y /S /D
+xcopy "$(QtBinaryDir)icuin51.dll" "$(EmuBinDir)" /Y /S /D
+xcopy "$(QtBinaryDir)icuuc51.dll" "$(EmuBinDir)" /Y /S /D</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="QtIncludeDir">

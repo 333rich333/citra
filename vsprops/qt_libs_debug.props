@@ -5,16 +5,18 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5OpenGLd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <MOC>
       <QtNoDebug>false</QtNoDebug>
       <QtCommandLine>/I"$(SolutionDir)src" /I"$(ExternalsDir)glew-1.6.0\include" /I"$(ExternalsDir)sdl-1.2.15\include" /I"$(ExternalsDir)qhexedit" /D"_DEBUG"</QtCommandLine>
     </MOC>
     <PostBuildEvent>
-      <Command>xcopy "$(QtBinaryDir)QtCored4.dll" "$(EmuBinDir)" /Y /S /D
-xcopy "$(QtBinaryDir)QtGuid4.dll" "$(EmuBinDir)" /Y /S /D
-xcopy "$(QtBinaryDir)QtOpenGLd4.dll" "$(EmuBinDir)" /Y /S /D</Command>
+      <Command>xcopy "$(QtBinaryDir)Qt5Cored.dll" "$(EmuBinDir)" /Y /S /D
+xcopy "$(QtBinaryDir)Qt5Guid.dll" "$(EmuBinDir)" /Y /S /D
+xcopy "$(QtBinaryDir)Qt5Widgetsd.dll" "$(EmuBinDir)" /Y /S /D
+xcopy "$(QtBinaryDir)Qt5OpenGLd.dll" "$(EmuBinDir)" /Y /S /D
+%(Command)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup />

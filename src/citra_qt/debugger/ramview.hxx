@@ -1,4 +1,5 @@
 #include "qhexedit.h"
+#include <QWidget>
 
 class GRamView : public QHexEdit
 {
